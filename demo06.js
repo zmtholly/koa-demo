@@ -25,3 +25,5 @@ app.use(async(ctx)=>{
 app.listen(3000,()=>{
     console.log('[demo] server is starting at port 3000')
 })
+
+// 访问 http://127.0.0.1:3000/index （Application）

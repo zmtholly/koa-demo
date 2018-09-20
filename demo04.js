@@ -9,6 +9,12 @@ const router = new Router()
 // }) 
 // 全局前缀 http://localhost:3000/world/todo
 
+//请求方式   http://localhost:3000/product/123
+router.get('/product/:aid',async (ctx)=>{
+    console.log(ctx.params); //{ aid: '123' }  //获取动态路由的数据
+    ctx.body='这是商品页面';
+ })
+
 router.get('/', function (ctx, next) {
     ctx.body = "Hello world"
     // ctx.body= ctx.query 接收参数
